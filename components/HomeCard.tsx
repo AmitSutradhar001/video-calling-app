@@ -25,7 +25,7 @@ const HomeCard = ({
       )}
       onClick={handleClick}
     >
-      <div className="flex-center bg-gray-400 opacity-50   size-12 rounded-sm ">
+      <div className="flex-center size-12 rounded-sm ">
         <Image src={img} alt={title} width={27} height={27} />
       </div>
       <div className="flex flex-col gap-2">

@@ -26,10 +26,13 @@ const MobileNavbar = () => {
             alt="MobileNavbar icon"
             width={36}
             height={36}
-            className="cursor-pointer sm:hidden"
+            className="cursor-pointer lg:hidden"
           />
         </SheetTrigger>
-        <SheetContent side="left" className="border-none w-[300px] bg-dark-1">
+        <SheetContent
+          side="left"
+          className="border-none w-[300px] bg-purple-500 bg-opacity-30"
+        >
           <Link href="/" className="flex items-center gap-1">
             <Image
               src="/icons/logo.svg"

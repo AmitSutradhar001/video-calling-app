@@ -13,6 +13,7 @@ const Upcoming = () => {
   console.log("Page upcoming", upcomingCalls);
   const noCallsMessage = "No Upcoming calls!";
   const router = useRouter();
+  console.log("upcomingCalls", upcomingCalls[0]?.state?.startsAt);
 
   if (isLoading) return <Loader />;
 
@@ -29,9 +30,9 @@ const Upcoming = () => {
                 meeting.state?.custom.description.substring(0, 20) ||
                 "No description!"
               }
-              date={meeting.start_time?.toLocaleString()}
+              date={meeting.state?.startsAt?.toLocaleString()}
               handleClick={() => router.push(`meeting/${meeting.id}`)}
-              link={`/meeting/${meeting.id}`} // ${process.env.NEXT_PUBLIC_BASE_URL} may be this will be added
+              link={`/meeting/${meeting.id}`}
               buttonText="Start"
             />
           ))

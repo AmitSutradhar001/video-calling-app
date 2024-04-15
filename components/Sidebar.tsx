@@ -9,7 +9,7 @@ import Image from "next/image";
 const Sidebar = () => {
   const pathname = usePathname();
   return (
-    <section className=" sticky rounded-md left-2 mt-20 h-screen w-fit hidden md:block  lg:w-[264px]">
+    <section className=" sticky rounded-md left-2 mt-20 h-screen w-fit hidden lg:block  lg:w-[264px]">
       <div className=" fixed rounded-md border-white border-2 left-2 mt-20 bg-opacity-30 bg-white flex h-screen w-fit max-sm:hidden lg:w-[264px]">
         <div className="flex flex-1 flex-col mt-14 ml-4 gap-4 text-white font-semibold">
           {sidebarLinks.map((link) => {
