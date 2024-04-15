@@ -31,7 +31,7 @@ const MeetingCard = ({
   const { toast } = useToast();
 
   return (
-    <section className="flex min-h-[258px] w-full flex-col justify-between rounded-[14px] bg-dark-1 px-5 py-8 xl:max-w-[568px]">
+    <section className="flex min-h-[258px] w-full flex-col justify-between rounded-[14px] bg-orange-500 bg-opacity-50 px-5 py-8 xl:max-w-[568px]">
       <article className="flex flex-col gap-5">
         <Image src={icon} alt="upcoming" width={28} height={28} />
         <div className="flex justify-between">
@@ -62,7 +62,7 @@ const MeetingCard = ({
           <div className="flex gap-3">
             <Button
               onClick={handleClick}
-              className="rounded text-center bg-blue-600 px-4"
+              className="rounded text-center bg-blue-600  px-4"
             >
               {buttonIcon1 && (
                 <Image src={buttonIcon1} alt="feature" width={20} height={20} />

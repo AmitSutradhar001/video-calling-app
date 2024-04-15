@@ -31,7 +31,7 @@ const Upcoming = () => {
               }
               date={meeting.start_time?.toLocaleString()}
               handleClick={() => router.push(`meeting/${meeting.id}`)}
-              link={`${process.env.NODE_ENV.NEXT_PUBLIC_BASE_URL}/meeting/${meeting.id}`}
+              link={`/meeting/${meeting.id}`} // ${process.env.NEXT_PUBLIC_BASE_URL} may be this will be added
               buttonText="Start"
             />
           ))

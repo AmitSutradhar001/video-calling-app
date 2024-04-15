@@ -6,16 +6,16 @@ import { SignedIn, UserButton } from "@clerk/nextjs";
 
 const Navbar = () => {
   return (
-    <nav className="flex-between fixed z-50 w-full bg-dark-1 px-6 py-4 lg:px-10">
+    <nav className="flex-between fixed z-50 w-full bg-white  bg-opacity-45 px-6 py-4 lg:px-10">
       <Link href="/" className="flex items-center gap-1">
         <Image
           src="/icons/logo.svg"
-          width={32}
-          height={32}
+          width={40}
+          height={40}
           alt="AS"
-          className="max-sm:size-10"
+          className="max-sm:size-10 "
         />
-        <p className="text-[26px] font-extralight text-white max-sm:hidden">
+        <p className="text-3xl font-semibold font-serif text-white max-sm:hidden">
           AS
         </p>
       </Link>

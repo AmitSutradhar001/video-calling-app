@@ -9,7 +9,6 @@ import { useRouter } from "next/navigation";
 import MeetingModal from "./MeetingModal";
 import { useUser } from "@clerk/nextjs";
 import { Call, useStreamVideoClient } from "@stream-io/video-react-sdk";
-import { title } from "process";
 import { Input } from "@/components/ui/input";
 
 const MeetingTypeList = () => {
@@ -80,7 +79,7 @@ const MeetingTypeList = () => {
         title="New Meeting"
         description="Create a new meeting"
         handleClick={() => setMeetingState("isInstantMeeting")}
-        className="bg-orange-400"
+        className="bg-orange-400 bg-opacity-50"
       />
       <HomeCard
         img="/icons/schedule.svg"
@@ -101,7 +100,7 @@ const MeetingTypeList = () => {
         title="Join Meeting"
         description="Via invitation link"
         handleClick={() => setMeetingState("isJoiningMeeting")}
-        className="bg-yellow-400"
+        className="bg-yellow-400 bg-opacity-65"
       />
       {!callDetails ? (
         <MeetingModal

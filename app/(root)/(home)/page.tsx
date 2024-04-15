@@ -1,8 +1,7 @@
-// "use client";
+"use client";
 import MeetingTypeList from "@/components/MeatingTypeList";
 import React from "react";
-// import { useUser } from "@clerk/nextjs";
-// import HomeUi from "@/components/HomeUi";
+import { useUser } from "@clerk/nextjs";
 
 const Home = () => {
   const now = new Date();
@@ -13,8 +12,7 @@ const Home = () => {
   const date = new Intl.DateTimeFormat("en-IN", { dateStyle: "full" }).format(
     now
   );
-  // const { user } = useUser();
-  // if (!user) <HomeUi />;
+  const { user } = useUser();
 
   return (
     <section className="flex size-full flex-col gap-6 text-white">

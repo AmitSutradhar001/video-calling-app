@@ -32,15 +32,14 @@ export default function RootLayout({
             logoPlacement: "inside",
           },
           variables: {
-            colorText: "#fff",
-            colorPrimary: "#0E78F9",
-            colorBackground: "#708090",
             colorInputBackground: "#578e9b",
             colorInputText: "#fff",
           },
         }}
       >
-        <body className={`${inter.className} bg-dark-2`}>
+        <body
+          className={`${inter.className} bg-gradient-to-r from-blue-700 via-purple-600 to-green-500`}
+        >
           {children}
           <Toaster />
         </body>
